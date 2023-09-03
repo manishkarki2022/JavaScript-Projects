@@ -1,0 +1,38 @@
+.popup-overlay{
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.5);
+    display: none;
+
+}
+.popup{
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    font-weight: Raleway;
+
+
+}
+.popup-close-btn{
+    position: absolute;
+   top: 10px;
+   right: 4%;
+   background-color: aqua;
+   padding:4px;
+   font-weight: bold;
+   border-radius: 6px;
+
+}
+body.popup-active .popup{
+   top:50%
+}
+body.popup-active .popup-overlay{
+    display: block;
+
+}
